@@ -25,9 +25,9 @@ To get started with Rails, make sure you have it installed on your computer. You
 
 Once you have that, navigate to a new directory of your choosing.
 
-In Sinatra, you were probably given a skeleton app to use and you would have to oh-so-laboriously copy and paste it into the new directory. In Rails, simply type `rails new name_of_app_here` in the terminal to setup your skeleton automagically. For our purposes, let's add a `-T` flag at the end of that statement to tell Rails that we want to use rspec and not the default test unit platform (`-T` is short for `--skip-test-unit`). So it'll look like this:
+In Sinatra, you were probably given a skeleton app to use and you would have to oh-so-laboriously copy and paste it into the new directory. In Rails, simply type `rails new name_of_app_here` in the terminal to setup your skeleton automagically. For our purposes, let's add a `-T` flag at the end of that statement to tell Rails that we want to use rspec and not the default test unit platform (`-T` is short for `--skip-test-unit`). Rails also defaults to Sqlite, so to specify Postgres, you'll need to add the -d postgres flag. So it'll look like this:
 
-    $ rails new name_of_app_here -T
+    $ rails new name_of_app_here -T -d postgres
 
 You should see a metric ton of `create` and `Using` statements appear on the screen when you hit enter. Now, if you look at your directory you'll see a folder with your app in it. If you navigate into it, you'll a whole bunch of new and confusing files. Don't panic just yet! We'll cover the important ones soon enough.
 
